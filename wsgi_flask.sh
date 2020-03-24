@@ -10,8 +10,8 @@ cd $home_dir/$user/web/$domain/private/
 virtualenv venv
 source venv/bin/activate
 
-pip install flask
-pip install -r $docroot/requirements.txt
+pip3 install flask
+pip3 install -r $docroot/requirements.txt
 
 deactivate
 
@@ -64,7 +64,7 @@ chown $user:$user $docroot/touch.sh
 chmod +x $docroot/touch.sh
 
 echo "For install requirements packs:
-cd $home_dir/$user/web/$domain/private/; source venv/bin/activate; pip install -r $docroot/requirements.txt; deactivate
+cd $home_dir/$user/web/$domain/private/; source venv/bin/activate; pip3 install -r $docroot/requirements.txt; deactivate
 
 For reload app:
 touch $docroot/app.wsgi
